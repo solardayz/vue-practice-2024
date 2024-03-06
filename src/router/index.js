@@ -138,6 +138,14 @@ const routes = [
       import(
         /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/RenderingShowView.vue'
       )
+  },
+  {
+    path: '/extra/computed',
+    name: 'ComputedView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/ComputedView.vue'
+      )
   }
 ]
 
