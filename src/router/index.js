@@ -130,6 +130,14 @@ const routes = [
       import(
         /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/RenderingIfView.vue'
       )
+  },
+  {
+    path: '/extra/show',
+    name: 'RenderingShowView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/RenderingShowView.vue'
+      )
   }
 ]
 
