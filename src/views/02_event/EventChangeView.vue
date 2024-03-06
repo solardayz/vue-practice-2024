@@ -9,7 +9,17 @@
     <select name="" id="">
       <option value=""></option>
       <option
-        v-for="dong in dongs.filter((dong) => dong.code === selectedCity)"
+        v-for="dong in selectedDongList"
+        :key="dong.dongCode"
+        :value="dong.dongCode"
+      >
+        {{ dong.dongName }}
+      </option>
+    </select>
+    <select name="" id="">
+      <option value=""></option>
+      <option
+        v-for="dong in dongs.filter((d) => d.code === selectedCity)"
         :key="dong.dongCode"
         :value="dong.dongCode"
       >
@@ -23,6 +33,7 @@ export default {
   data() {
     return {
       selectedCity: '',
+      selectedDongList: [],
       cites: [
         { code: '01', dosi: '서울' },
         { code: '02', dosi: '대전' },
@@ -41,7 +52,15 @@ export default {
   },
   methods: {
     changeCity(event) {
-      this.dong = this.dongs.filters((dong) => dong.code === this.selectedCity)
+      console.log(event.target.tagName)
+      this.selectedDongList = this.dongs.filter(
+        (d) => d.code === this.selectedCity
+      )
+
+      console.log(
+        this.selectedCity,
+        this.dongs.filter((d) => d.code === this.selectedCity)
+      )
     }
   }
 }
