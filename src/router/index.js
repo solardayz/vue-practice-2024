@@ -146,6 +146,14 @@ const routes = [
       import(
         /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/ComputedView.vue'
       )
+  },
+  {
+    path: '/extra/lifecycle',
+    name: 'LifecycleHookView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/03_extra/LifecycleHookView.vue'
+      )
   }
 ]
 
