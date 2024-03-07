@@ -24,23 +24,26 @@ export default {
   beforeMount() {},
   // 실제 DOM이 랜더링이 끝난 상태
   mounted() {
-    let i = 0
+    // let i = 0
     // this.getCityList()
-    this.fnInterval = window.setInterval(() => {
-      console.log('마운티드', i++)
-    }, 1000)
+    // console.log('마운티드')
+    // this.fnInterval = window.setInterval(() => {
+    //   // console.log('마운티드', i++)
+    // }, 1000)
   },
   // data  변경으로 인해 DOM을 업데이트 하기 직전 상태
   beforeUpdate() {},
   // DOM 이 업데이트 된 후에 호출
-  update() {},
+  updated() {
+    console.log('옵데이트')
+  },
   // 현재 컴포넌트를 빠져 나가기 직전
   beforeUnmount() {},
   // 현재 컴포넌트를 빠져 나갈때
   unmounted() {
-    window.clearInterval(this.fnInterval)
-    this.fnInterval = null
-    this.cities = null
+    // window.clearInterval(this.fnInterval)
+    // this.fnInterval = null
+    // this.cities = null
   },
   methods: {
     getCityList() {
