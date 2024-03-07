@@ -11,6 +11,7 @@
         {{ num }}
       </option>
     </select>
+    <button @click="callParent">부모로 데이터 전달</button>
   </div>
 </template>
 
@@ -47,8 +48,11 @@ export default {
   },
   methods: {
     callParent() {
-      //   //   this.$emit('change-num')
-      console.log(this.selectedNum)
+      this.$emit('click-num', this.selectedNum)
+      //   console.log(this.selectedNum)
+    },
+    printstr() {
+      console.log('printstr')
     }
   }
 }
