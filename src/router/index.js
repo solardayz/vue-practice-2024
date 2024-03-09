@@ -178,6 +178,14 @@ const routes = [
       import(
         /* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/04_reuse/ParentView.vue'
       )
+  },
+  {
+    path: '/advanced/directive',
+    name: 'CustomDirectivetView',
+    component: () =>
+      import(
+        /* webpackChunkName: "advanced", webpackPrefetch:true */ '../views/05_advanced/CustomDirectiveView.vue'
+      )
   }
 ]
 

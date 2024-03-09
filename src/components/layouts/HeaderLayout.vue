@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">CHALEECHA</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -34,7 +34,9 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/reuse/parent">Parent</a></li>
               <li>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="/advanced/directive"
+                  >Another action</a
+                >
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
