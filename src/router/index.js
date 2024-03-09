@@ -186,6 +186,14 @@ const routes = [
       import(
         /* webpackChunkName: "advanced", webpackPrefetch:true */ '../views/05_advanced/CustomDirectiveView.vue'
       )
+  },
+  {
+    path: '/advanced/mixin',
+    name: 'MixinView',
+    component: () =>
+      import(
+        /* webpackChunkName: "advanced", webpackPrefetch:true */ '../views/05_advanced/MixinView.vue'
+      )
   }
 ]
 
