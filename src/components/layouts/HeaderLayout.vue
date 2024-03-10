@@ -44,6 +44,10 @@
                   >Something else here</a
                 >
               </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="/modules/calendar">calendar</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
