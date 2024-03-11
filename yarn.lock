@@ -6802,6 +6802,11 @@ vue-loader@^17.0.0:
     hash-sum "^2.0.0"
     watchpack "^2.4.0"
 
+vue-loading-overlay@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.npmjs.org/vue-loading-overlay/-/vue-loading-overlay-6.0.4.tgz"
+  integrity sha512-DmMqLjQULk4bJ6C1IyDQzasgxb03KLrcj6nitlMIJkh6np0rQkWpgdu0upS3lJcrF9q+dmrhnU+A8I5pz41bqw==
+
 vue-router@^3.5.1:
   version "3.6.5"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-3.6.5.tgz"
@@ -6835,7 +6840,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@*, "vue@^2 || ^3.2.13", vue@^2.0.0, vue@^2.6.12, vue@^2.6.14:
+vue@*, "vue@^2 || ^3.2.13", vue@^2.0.0, vue@^2.6.12, vue@^2.6.14, vue@^3.2.0:
   version "2.7.16"
   resolved "https://registry.npmjs.org/vue/-/vue-2.7.16.tgz"
   integrity sha512-4gCtFXaAA3zYZdTp5s4Hl2sozuySsgz4jy1EnpBHNfpMa9dK1ZCG7viqBPCwXtmgc8nHqUsAu3G4gtmXkkY3Sw==
