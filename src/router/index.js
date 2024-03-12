@@ -221,10 +221,10 @@ const routes = [
   },
   {
     path: '/modules/table',
-    name: 'ViewGoodTableView',
+    name: 'VueGoodTableView',
     component: () =>
       import(
-        /* webpackChunkName: "modules", webpackPrefetch:true */ '../views/09_modules/ViewGoodTableView.vue'
+        /* webpackChunkName: "modules", webpackPrefetch:true */ '../views/09_modules/VueGoodTableView.vue'
       )
   }
 ]

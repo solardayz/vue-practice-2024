@@ -1,11 +1,21 @@
 <template>
   <div>
-    <vue-good-table :columns="columns" :rows="rows" />
+    <vue-good-table
+      :columns="columns"
+      :rows="rows"
+      :row-style-class="rowStyleClassFn"
+    >
+    </vue-good-table>
   </div>
 </template>
 
 <script>
 export default {
+  methods: {
+    rowStyleClassFn(row) {
+      return row.age > 18 ? 'green' : 'red'
+    }
+  },
   name: 'my-component',
   data() {
     return {
@@ -74,3 +84,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+</style>
