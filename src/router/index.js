@@ -226,6 +226,14 @@ const routes = [
       import(
         /* webpackChunkName: "modules", webpackPrefetch:true */ '../views/09_modules/VueGoodTableView.vue'
       )
+  },
+  {
+    path: '/modules/chart',
+    name: 'VueChartView',
+    component: () =>
+      import(
+        /* webpackChunkName: "modules", webpackPrefetch:true */ '../views/09_modules/VueChartView.vue'
+      )
   }
 ]
 

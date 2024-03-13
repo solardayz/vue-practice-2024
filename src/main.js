@@ -15,6 +15,11 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 // import the styles
 import 'vue-good-table/dist/vue-good-table.css'
 
+import VueApexCharts from 'vue-apexcharts'
+Vue.use(VueApexCharts)
+
+Vue.component('apex-chart', VueApexCharts)
+
 Vue.config.productionTip = false
 Vue.use(VueSweetalert2)
 Vue.use(VueGoodTablePlugin)
