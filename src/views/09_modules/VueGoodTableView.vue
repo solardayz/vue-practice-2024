@@ -3,8 +3,20 @@
     <vue-good-table
       :columns="columns"
       :rows="rows"
-      :row-style-class="rowStyleClassFn"
+      @on-cell-click="onCellClick"
+      :search-options="{
+        enabled: true,
+        searchFn: myFunc
+      }"
+      :pagination-options="{
+        enabled: true,
+        perPage: 2
+      }"
     >
+      >
+      <div slot="table-actions">
+        This will show up on the top right of the table.
+      </div>
     </vue-good-table>
   </div>
 </template>
@@ -14,6 +26,17 @@ export default {
   methods: {
     rowStyleClassFn(row) {
       return row.age > 18 ? 'green' : 'red'
+    },
+    onCellClick(params) {
+      // params.row - row object
+      // params.column - column object
+      // params.rowIndex - index of this row on the current page.
+      // params.event - click event
+      console.log(params)
+      alert(params.row.age)
+    },
+    myFunc(row, col, cellValue, searchTerm) {
+      return cellValue === 'my value'
     }
   },
   name: 'my-component',
