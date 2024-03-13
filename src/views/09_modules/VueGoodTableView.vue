@@ -8,6 +8,7 @@
         enabled: true,
         searchFn: myFunc
       }"
+      :select-options="{ enabled: true }"
       :pagination-options="{
         enabled: true,
         perPage: 2
