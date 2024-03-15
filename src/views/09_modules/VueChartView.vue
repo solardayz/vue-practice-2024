@@ -2,7 +2,7 @@
   <div>
     <apex-chart
       width="500"
-      type="line"
+      type="bar"
       :options="options"
       :series="series"
     ></apex-chart>
@@ -26,6 +26,10 @@ export default {
         {
           name: 'Vue Chart',
           data: [30, 40, 45, 50, 49, 60, 70, 81]
+        },
+        {
+          name: 'Vue Chart',
+          data: [320, 430, 45, 530, 429, 610, 270, 81]
         }
       ]
     }
